@@ -1,6 +1,9 @@
 package pigdeer.parking.base;
 
+import pigdeer.parking.errors.*;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,67 +14,33 @@ import java.util.HashSet;
  */
 public class Parking {
     private int totalSpace;
-    private int currentSpace;
-    private HashSet<Car> cars;
+    private Map<Ticket, Car> parkedCarMap = new HashMap<Ticket, Car>();
 
-    public int getCurrentSpace() {
-        return currentSpace;
+    public Parking(){
+        this.totalSpace = 100;
     }
 
-    public void setCurrentSpace(int currentSpace) {
-        this.currentSpace = currentSpace;
+    public int getAvailableSpace(){
+       return totalSpace - parkedCarMap.size();
     }
 
-    public int getTotalSpace() {
-        return totalSpace;
+    public Ticket push(Car car) throws NoSpaceException{
+        if(getAvailableSpace()==0){
+            throw new NoSpaceException();
+        }
+        Ticket ticket = new Ticket();
+        parkedCarMap.put(ticket,car);
+        return ticket;
+    }
+
+    public Car pull(Ticket ticket) throws NoCarException{
+        if(!parkedCarMap.containsKey(ticket)){
+            throw new NoCarException();
+        }
+        return parkedCarMap.remove(ticket);
     }
 
     public void setTotalSpace(int totalSpace) {
         this.totalSpace = totalSpace;
     }
-
-    public HashSet<Car> getCars() {
-        return cars;
-    }
-
-    public void setCars(Car[] cars) {
-        for(int i=0; i<cars.length; i++){
-            this.cars.add(cars[i]);
-        }
-    }
-
-    public Parking(){
-        this.totalSpace = 100;
-        this.currentSpace = 100;
-        this.cars = new HashSet();
-    }
-
-    public boolean push(Car mycar) {
-        if(getCurrentSpace()==0)
-            return false;
-        cars.add(mycar);
-        this.currentSpace--;
-        return true;
-    }
-
-    public boolean pull(Car mycar) {
-        Car c1 = new Car("car1",1);
-        Car c2 = new Car("car1",1);
-        System.out.println(c2.equals(c1));
-
-        System.out.println(cars.contains(c1));
-        System.out.println(cars);
-        System.out.println(mycar);
-        if(getCurrentSpace()==getTotalSpace()){
-            return false;
-        }else if(cars.contains(mycar)){
-
-            cars.remove(mycar);
-            this.currentSpace++;
-            return true;
-        }else{
-            return false;
-        }
-    }
-
 }
