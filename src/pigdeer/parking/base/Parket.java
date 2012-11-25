@@ -18,9 +18,27 @@ import java.util.List;
  */
 public class Parket implements Parking {
     private List<ParkLot> parkingList;
+    private List<ParkBoy> parkBoys;
 
-    public Parket(ArrayList<ParkLot> parkingList){
+    public List<ParkBoy> getParkBoys() {
+        return parkBoys;
+    }
+
+    public void setParkBoys(List<ParkBoy> parkBoys) {
+        this.parkBoys = parkBoys;
+    }
+
+    public List<ParkLot> getParkingList() {
+        return parkingList;
+    }
+
+    public void setParkingList(List<ParkLot> parkingList) {
         this.parkingList = parkingList;
+    }
+
+    public Parket(ArrayList<ParkLot> parkingList, ArrayList<ParkBoy> parkBoys){
+        this.parkingList = parkingList;
+        this.parkBoys = parkBoys;
     }
 
     public Ticket push(Car car)  throws NoSpaceForCarException {
@@ -45,5 +63,9 @@ public class Parket implements Parking {
             }
         }
         throw new NoCarForTicketException();
+    }
+
+    public ParkBoy findBoy(String normal) {
+        return new ParkBoy("smart");
     }
 }
