@@ -1,9 +1,10 @@
 package pigdeer.parking.base;
 
-import pigdeer.parking.errors.NoCarException;
+import pigdeer.parking.errors.NoCarInLotException;
 import pigdeer.parking.errors.NoCarForTicketException;
-import pigdeer.parking.errors.NoSpaceException;
+import pigdeer.parking.errors.NoSpaceInLotException;
 import pigdeer.parking.errors.NoSpaceForCarException;
+import pigdeer.parking.interfaces.Parking;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,20 +16,20 @@ import java.util.List;
  * Time: 下午2:37
  * To change this template use File | Settings | File Templates.
  */
-public class ParkingBoy {
-    private List<Parking> parkingList;
+public class Parket implements Parking {
+    private List<ParkLot> parkingList;
 
-    public ParkingBoy(ArrayList<Parking> parkingList){
+    public Parket(ArrayList<ParkLot> parkingList){
         this.parkingList = parkingList;
     }
 
     public Ticket push(Car car)  throws NoSpaceForCarException {
         Ticket ticket;
-        for(Parking p : parkingList){
+        for(ParkLot p : parkingList){
             try{
                 ticket = p.push(car);
                 return ticket;
-            }catch (NoSpaceException e){
+            }catch (NoSpaceInLotException e){
             }
         }
         throw new NoSpaceForCarException();
@@ -36,11 +37,11 @@ public class ParkingBoy {
 
     public Car pull(Ticket ticket) throws NoCarForTicketException {
         Car car;
-        for(Parking p : parkingList){
+        for(ParkLot p : parkingList){
             try{
                 car = p.pull(ticket);
                 return car;
-            }catch (NoCarException e){
+            }catch (NoCarInLotException e){
             }
         }
         throw new NoCarForTicketException();

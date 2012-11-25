@@ -2,11 +2,11 @@ package pigdeer.parking.base;
 
 import org.junit.Before;
 import org.junit.Test;
-import pigdeer.parking.errors.*;
+import pigdeer.parking.errors.NoCarForTicketException;
+import pigdeer.parking.errors.NoSpaceForCarException;
 
 import java.util.ArrayList;
 
-import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertSame;
 
@@ -18,14 +18,14 @@ import static junit.framework.Assert.assertSame;
  * To change this template use File | Settings | File Templates.
  */
 public class ParkTest {
-    private ParkingBoy pb;
+    private Parket pb;
 
     @Before
     public void initPark(){
-        ArrayList<Parking> pl = new ArrayList<Parking>();
-        pl.add(new Parking(1));
-        pl.add(new Parking(2));
-        pb = new ParkingBoy(pl);
+        ArrayList<ParkLot> pl = new ArrayList<ParkLot>();
+        pl.add(new ParkLot(1));
+        pl.add(new ParkLot(2));
+        pb = new Parket(pl);
     }
 
     @Test
