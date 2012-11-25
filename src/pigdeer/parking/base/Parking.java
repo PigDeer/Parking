@@ -16,8 +16,8 @@ public class Parking {
     private int totalSpace;
     private Map<Ticket, Car> parkedCarMap = new HashMap<Ticket, Car>();
 
-    public Parking(){
-        this.totalSpace = 100;
+    public Parking(int totalSpace){
+        this.totalSpace = totalSpace;
     }
 
     public int getAvailableSpace(){
@@ -40,7 +40,4 @@ public class Parking {
         return parkedCarMap.remove(ticket);
     }
 
-    public void setTotalSpace(int totalSpace) {
-        this.totalSpace = totalSpace;
-    }
 }

@@ -2,8 +2,9 @@ package pigdeer.parking.base;
 
 import org.junit.Before;
 import org.junit.Test;
-import pigdeer.parking.errors.NoCarException;
-import pigdeer.parking.errors.NoSpaceException;
+import pigdeer.parking.errors.*;
+
+import java.util.ArrayList;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
@@ -17,36 +18,41 @@ import static junit.framework.Assert.assertSame;
  * To change this template use File | Settings | File Templates.
  */
 public class ParkTest {
-    private Parking p;
+    private ParkingBoy pb;
 
     @Before
     public void initPark(){
-        p = new Parking();
+        ArrayList<Parking> pl = new ArrayList<Parking>();
+        pl.add(new Parking(1));
+        pl.add(new Parking(2));
+        pb = new ParkingBoy(pl);
     }
 
     @Test
-    public void should_push_a_car_if_has_space(){
-        Ticket ticket = p.push(new Car());
+    public void should_push_a_car_if_has_space() {
+        Ticket ticket = pb.push(new Car());
         assertNotNull(ticket);
     }
 
     @Test
     public void should_pull_a_car_if_had_park_it(){
         Car car = new Car();
-        Ticket ticket = p.push(car);
-        assertSame(car,p.pull(ticket));
+        Ticket ticket = pb.push(car);
+        assertSame(car, pb.pull(ticket));
     }
 
-    @Test (expected = NoSpaceException.class)
+    @Test (expected = NoSpaceForCarException.class)
     public void should_not_push_a_car_if_has_no_space(){
-        p.setTotalSpace(0);
-        p.push(new Car());
+        pb.push(new Car());
+        pb.push(new Car());
+        pb.push(new Car());
+        pb.push(new Car());
     }
 
-    @Test (expected = NoCarException.class)
+    @Test (expected = NoCarForTicketException.class)
     public void should_not_pull_a_car_if_has_no_car(){
         Ticket ticket = new Ticket();
-        p.pull(ticket);
+        pb.pull(ticket);
     }
 
 }
