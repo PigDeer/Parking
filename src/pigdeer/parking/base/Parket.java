@@ -1,9 +1,6 @@
 package pigdeer.parking.base;
 
-import pigdeer.parking.errors.NoCarInLotException;
-import pigdeer.parking.errors.NoCarForTicketException;
-import pigdeer.parking.errors.NoSpaceInLotException;
-import pigdeer.parking.errors.NoSpaceForCarException;
+import pigdeer.parking.errors.*;
 import pigdeer.parking.interfaces.Parking;
 
 import java.util.ArrayList;
@@ -26,6 +23,10 @@ public class Parket implements Parking {
 
     public void setParkBoys(List<ParkBoy> parkBoys) {
         this.parkBoys = parkBoys;
+        //维护关系
+        for(ParkBoy pb : this.parkBoys){
+            pb.setParket(this);
+        }
     }
 
     public List<ParkLot> getParkingList() {
@@ -37,8 +38,8 @@ public class Parket implements Parking {
     }
 
     public Parket(ArrayList<ParkLot> parkingList, ArrayList<ParkBoy> parkBoys){
-        this.parkingList = parkingList;
-        this.parkBoys = parkBoys;
+        this.setParkingList(parkingList);
+        this.setParkBoys(parkBoys);
     }
 
     public Ticket push(Car car)  throws NoSpaceForCarException {
@@ -65,7 +66,25 @@ public class Parket implements Parking {
         throw new NoCarForTicketException();
     }
 
-    public ParkBoy findBoy(String normal) {
-        return new ParkBoy("smart");
+    public ParkBoy findBoy(String character) throws NoParkBoyException {
+        for(ParkBoy p: this.parkBoys){
+            if(p.getCharacter() == character){
+                return p;
+            }
+        }
+        throw new NoParkBoyException();
+    }
+
+    public ParkLot findBestLot() throws NoSpaceForCarException {
+        int space = 0;
+        ParkLot parkLot = null;
+        for(ParkLot p : this.getParkingList()){
+            if(p.getAvailableSpace()>space){
+                space = p.getAvailableSpace();
+                parkLot = p;
+            }
+        }
+        if(space>0) return parkLot;
+        throw new NoSpaceForCarException();
     }
 }

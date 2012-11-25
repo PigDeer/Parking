@@ -16,23 +16,44 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class ParkBoy implements Parking {
+    public static final String C_SMART = "smart";
+    public static final String C_NORMAL = "normal";
+
     private String character;
     private Parket parket;
 
     public ParkBoy(String character) {
+        this.setCharacter(character);
+    }
+
+    public String getCharacter() {
+        return character;
+    }
+
+    public void setCharacter(String character) {
         this.character = character;
     }
 
+    public Parket getParket() {
+        return parket;
+    }
+
+    public void setParket(Parket parket) {
+        this.parket = parket;
+    }
+
     public Ticket push(Car car)  throws NoSpaceForCarException {
-        Ticket ticket;
-        for(ParkLot p : parket.getParkingList()){
-            try{
-                ticket = p.push(car);
-                return ticket;
-            }catch (NoSpaceInLotException e){
+        if(this.getCharacter()==C_SMART){
+            return parket.findBestLot().push(car);
+        }else{
+            for(ParkLot p : parket.getParkingList()){
+                try{
+                    return p.push(car);
+                }catch (NoSpaceInLotException e){
+                }
             }
+            throw new NoSpaceForCarException();
         }
-        throw new NoSpaceForCarException();
     }
 
     public Car pull(Ticket ticket) throws NoCarForTicketException {

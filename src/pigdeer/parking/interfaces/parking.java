@@ -5,13 +5,12 @@ import pigdeer.parking.base.Ticket;
 
 /**
  * Created with IntelliJ IDEA.
- * User: software
+ * User: Zhutao
  * Date: 12-11-25
- * Time: 下午3:26
+ * Time: 下午7:11
  * To change this template use File | Settings | File Templates.
  */
 public interface Parking {
-
 
     public Ticket push(Car car);
 
