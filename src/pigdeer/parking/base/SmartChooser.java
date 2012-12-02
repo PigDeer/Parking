@@ -10,7 +10,7 @@ import pigdeer.parking.interfaces.ParkLotChooser;
  * Time: 下午3:24
  * To change this template use File | Settings | File Templates.
  */
-public class GoodChooser implements ParkLotChooser {
+public class SmartChooser implements ParkLotChooser {
     @Override
     public ParkLot choose(Parket parket) throws NoSpaceForCarException{
         int space = 0;
