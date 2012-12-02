@@ -14,22 +14,15 @@ import pigdeer.parking.interfaces.ParkingInterface;
  * To change this template use File | Settings | File Templates.
  */
 public class ParkBoy implements ParkingInterface {
-    public static final String C_SMART = "smart";
-    public static final String C_NORMAL = "normal";
-
-    private String character;
+    private ParkLotChooser parkLotChooser;
     private Parket parket;
 
-    public ParkBoy(String character) {
-        this.setCharacter(character);
+    public ParkLotChooser getParkLotChooser() {
+        return parkLotChooser;
     }
 
-    public String getCharacter() {
-        return character;
-    }
-
-    public void setCharacter(String character) {
-        this.character = character;
+    public void setParkLotChooser(ParkLotChooser parkLotChooser) {
+        this.parkLotChooser = parkLotChooser;
     }
 
     public Parket getParket() {
@@ -40,18 +33,14 @@ public class ParkBoy implements ParkingInterface {
         this.parket = parket;
     }
 
+    public ParkBoy(ParkLotChooser parkLotChooser, Parket parket) {
+        this.setParkLotChooser(parkLotChooser);
+        this.setParket(parket);
+    }
+
     public Ticket push(Car car)  throws NoSpaceForCarException {
-        if(this.getCharacter()==C_SMART){
-            return parket.findBestLot().push(car);
-        }else{
-            for(ParkLot p : parket.getParkingList()){
-                try{
-                    return p.push(car);
-                }catch (NoSpaceInLotException e){
-                }
-            }
-            throw new NoSpaceForCarException();
-        }
+        ParkLot p = parkLotChooser.choose(parket);
+        return p.push(car);
     }
 
     public Car pull(Ticket ticket) throws NoCarForTicketException {
