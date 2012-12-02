@@ -41,4 +41,7 @@ public class ParkLot implements ParkingInterface {
         return parkedCarMap.remove(ticket);
     }
 
+    public double getSpaceRate() {
+        return (double) getAvailableSpace() / totalSpace;
+    }
 }
