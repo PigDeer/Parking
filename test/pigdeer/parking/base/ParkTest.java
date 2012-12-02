@@ -20,16 +20,15 @@ import static junit.framework.Assert.assertSame;
  */
 public class ParkTest {
     private Parket parket;
+    private ParkBoy parkBoy;
 
     @Before
     public void initPark(){
         ArrayList<ParkLot> pl = new ArrayList<ParkLot>();
         pl.add(new ParkLot(2));
         pl.add(new ParkLot(2));
-        ArrayList<ParkBoy> pb = new ArrayList<ParkBoy>();
-        pb.add(new ParkBoy("smart"));
-        pb.add(new ParkBoy("normal"));
-        parket = new Parket(pl,pb);
+        parket = new Parket(pl);
+        parkBoy = new ParkBoy(new GoodChooser(),parket);
     }
 
     @Test
