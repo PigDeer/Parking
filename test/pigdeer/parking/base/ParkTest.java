@@ -20,60 +20,59 @@ import static junit.framework.Assert.assertSame;
  */
 public class ParkTest {
     private Parket parket;
+    private ParkBoy parkBoySmart;
+    private ParkBoy parkBoyNormal;
 
     @Before
     public void initPark(){
         ArrayList<ParkLot> pl = new ArrayList<ParkLot>();
         pl.add(new ParkLot(2));
         pl.add(new ParkLot(2));
-        ArrayList<ParkBoy> pb = new ArrayList<ParkBoy>();
-        pb.add(new ParkBoy("smart"));
-        pb.add(new ParkBoy("normal"));
-        parket = new Parket(pl,pb);
+        parket = new Parket(pl);
+        parkBoySmart = new ParkBoy(new GoodChooser(),parket);
+        parkBoyNormal = new ParkBoy(new NormalChooser(),parket);
     }
 
     @Test
     public void should_push_a_car_if_has_space() {
-        Ticket ticket = parket.push(new Car());
+        Ticket ticket = parkBoyNormal.push(new Car());
         assertNotNull(ticket);
     }
 
     @Test
     public void should_pull_a_car_if_had_park_it(){
         Car car = new Car();
-        Ticket ticket = parket.push(car);
-        assertSame(car, parket.pull(ticket));
+        Ticket ticket = parkBoyNormal.push(car);
+        assertSame(car, parkBoyNormal.pull(ticket));
     }
 
     @Test (expected = NoSpaceForCarException.class)
     public void should_not_push_a_car_if_has_no_space(){
-        parket.push(new Car());
-        parket.push(new Car());
-        parket.push(new Car());
-        parket.push(new Car());
-        parket.push(new Car());
+        parkBoyNormal.push(new Car());
+        parkBoyNormal.push(new Car());
+        parkBoyNormal.push(new Car());
+        parkBoyNormal.push(new Car());
+        parkBoyNormal.push(new Car());
     }
 
     @Test (expected = NoCarForTicketException.class)
     public void should_not_pull_a_car_if_has_no_car(){
         Ticket ticket = new Ticket();
-        parket.pull(ticket);
+        parkBoyNormal.pull(ticket);
     }
 
     @Test
-    public void should_park_random_if_face_the_old_boy(){
-        ParkBoy pb = parket.findBoy("normal");
-        pb.push(new Car());
-        pb.push(new Car());
+    public void should_park_random_if_face_the_normal_boy(){
+        parkBoyNormal.push(new Car());
+        parkBoyNormal.push(new Car());
         assertEquals(0,parket.getParkingList().get(0).getAvailableSpace());
         assertEquals(2,parket.getParkingList().get(1).getAvailableSpace());
     }
 
     @Test
     public void should_park_more_space_if_face_the_smart_boy(){
-        ParkBoy pb = parket.findBoy("smart");
-        pb.push(new Car());
-        pb.push(new Car());
+        parkBoySmart.push(new Car());
+        parkBoySmart.push(new Car());
         assertEquals(1,parket.getParkingList().get(0).getAvailableSpace());
         assertEquals(1,parket.getParkingList().get(1).getAvailableSpace());
     }

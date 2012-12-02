@@ -1,9 +1,7 @@
 package pigdeer.parking.base;
 
-import pigdeer.parking.errors.NoCarForTicketException;
-import pigdeer.parking.errors.NoCarInLotException;
-import pigdeer.parking.errors.NoSpaceForCarException;
-import pigdeer.parking.errors.NoSpaceInLotException;
+import pigdeer.parking.errors.*;
+import pigdeer.parking.interfaces.ParkLotChooser;
 import pigdeer.parking.interfaces.ParkingInterface;
 
 /**
