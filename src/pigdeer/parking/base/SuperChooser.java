@@ -12,7 +12,7 @@ import pigdeer.parking.interfaces.ParkLotChooser;
  */
 public class SuperChooser implements ParkLotChooser {
     @Override
-    public ParkLot choose(Parket parket) {
+    public ParkLot choose(Parket parket) throws NoSpaceForCarException{
         double spaceRate = 0.0;
         ParkLot parkLot = null;
         for(ParkLot p : parket.getParkingList()){
