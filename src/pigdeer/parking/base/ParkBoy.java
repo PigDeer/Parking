@@ -4,9 +4,7 @@ import pigdeer.parking.errors.NoCarForTicketException;
 import pigdeer.parking.errors.NoCarInLotException;
 import pigdeer.parking.errors.NoSpaceForCarException;
 import pigdeer.parking.errors.NoSpaceInLotException;
-import pigdeer.parking.interfaces.Parking;
-
-import java.util.List;
+import pigdeer.parking.interfaces.ParkingInterface;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,7 +13,7 @@ import java.util.List;
  * Time: 下午4:38
  * To change this template use File | Settings | File Templates.
  */
-public class ParkBoy implements Parking {
+public class ParkBoy implements ParkingInterface {
     public static final String C_SMART = "smart";
     public static final String C_NORMAL = "normal";
 

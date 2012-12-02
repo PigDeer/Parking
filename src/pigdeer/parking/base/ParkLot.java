@@ -1,7 +1,7 @@
 package pigdeer.parking.base;
 
 import pigdeer.parking.errors.*;
-import pigdeer.parking.interfaces.Parking;
+import pigdeer.parking.interfaces.ParkingInterface;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,7 +13,7 @@ import java.util.Map;
  * Time: 下午3:11
  * To change this template use File | Settings | File Templates.
  */
-public class ParkLot implements Parking {
+public class ParkLot implements ParkingInterface {
     private int totalSpace;
     private Map<Ticket, Car> parkedCarMap = new HashMap<Ticket, Car>();
 

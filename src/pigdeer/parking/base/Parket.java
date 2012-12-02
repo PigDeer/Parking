@@ -1,7 +1,7 @@
 package pigdeer.parking.base;
 
 import pigdeer.parking.errors.*;
-import pigdeer.parking.interfaces.Parking;
+import pigdeer.parking.interfaces.ParkingInterface;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.List;
  * Time: 下午2:37
  * To change this template use File | Settings | File Templates.
  */
-public class Parket implements Parking {
+public class Parket implements ParkingInterface {
     private List<ParkLot> parkingList;
     private List<ParkBoy> parkBoys;
 

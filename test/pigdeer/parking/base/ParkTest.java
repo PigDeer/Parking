@@ -24,8 +24,8 @@ public class ParkTest {
     @Before
     public void initPark(){
         ArrayList<ParkLot> pl = new ArrayList<ParkLot>();
-        pl.add(new ParkLot(10));
-        pl.add(new ParkLot(10));
+        pl.add(new ParkLot(2));
+        pl.add(new ParkLot(2));
         ArrayList<ParkBoy> pb = new ArrayList<ParkBoy>();
         pb.add(new ParkBoy("smart"));
         pb.add(new ParkBoy("normal"));
@@ -51,6 +51,7 @@ public class ParkTest {
         parket.push(new Car());
         parket.push(new Car());
         parket.push(new Car());
+        parket.push(new Car());
     }
 
     @Test (expected = NoCarForTicketException.class)
@@ -64,8 +65,8 @@ public class ParkTest {
         ParkBoy pb = parket.findBoy("normal");
         pb.push(new Car());
         pb.push(new Car());
-        assertEquals(8,parket.getParkingList().get(0).getAvailableSpace());
-        assertEquals(10,parket.getParkingList().get(1).getAvailableSpace());
+        assertEquals(0,parket.getParkingList().get(0).getAvailableSpace());
+        assertEquals(2,parket.getParkingList().get(1).getAvailableSpace());
     }
 
     @Test
@@ -73,8 +74,8 @@ public class ParkTest {
         ParkBoy pb = parket.findBoy("smart");
         pb.push(new Car());
         pb.push(new Car());
-        assertEquals(9,parket.getParkingList().get(0).getAvailableSpace());
-        assertEquals(9,parket.getParkingList().get(1).getAvailableSpace());
+        assertEquals(1,parket.getParkingList().get(0).getAvailableSpace());
+        assertEquals(1,parket.getParkingList().get(1).getAvailableSpace());
     }
 
 }

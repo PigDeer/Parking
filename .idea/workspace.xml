@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" name="Default" comment="" />
+    <list default="true" id="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/interfaces/ParkingInterface.class" />
+      <change type="DELETED" beforePath="E:\code\Parking\out\production\Parking\pigdeer\parking\interfaces\Parking.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/base/Car.class" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/base/Car.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/base/ParkBoy.class" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/base/ParkBoy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/base/ParkLot.class" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/base/ParkLot.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/base/Parket.class" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/base/Parket.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/base/Ticket.class" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/base/Ticket.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/errors/NoCarForTicketException.class" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/errors/NoCarForTicketException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/errors/NoCarInLotException.class" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/errors/NoCarInLotException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/errors/NoParkBoyException.class" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/errors/NoParkBoyException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/errors/NoSpaceForCarException.class" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/errors/NoSpaceForCarException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/errors/NoSpaceInLotException.class" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/errors/NoSpaceInLotException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Parking/pigdeer/parking/base/ParkTest.class" afterPath="$PROJECT_DIR$/out/test/Parking/pigdeer/parking/base/ParkTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/base/ParkLot.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/base/ParkLot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/base/Parket.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/base/Parket.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java" afterPath="$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java" />
+      <change type="MOVED" beforePath="E:\code\Parking\src\pigdeer\parking\interfaces\parking.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/interfaces/ParkingInterface.java" />
+    </list>
     <ignored path="Parking.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,11 +79,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Parket.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Parket.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/Parket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="9" selection-start="1331" selection-end="1331" vertical-scroll-proportion="1.1555076">
-              <folding />
+            <state line="15" column="47" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParkingInterface.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/interfaces/ParkingInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="24" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,16 +104,16 @@
       <file leaf-file-name="ParkBoy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="44" selection-start="1204" selection-end="1208" vertical-scroll-proportion="0.0">
+            <state line="44" column="44" selection-start="1198" selection-end="1202" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParkTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ParkTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="27" selection-start="2157" selection-end="2157" vertical-scroll-proportion="0.0">
+            <state line="66" column="27" selection-start="1879" selection-end="1879" vertical-scroll-proportion="1.0522566">
               <folding />
             </state>
           </provider>
@@ -111,19 +145,20 @@
         <option value="$PROJECT_DIR$/src/pigdeer/parking/errors/NoCarInLotException.java" />
         <option value="$PROJECT_DIR$/src/pigdeer/parking/errors/NoSpaceException.java" />
         <option value="$PROJECT_DIR$/src/pigdeer/parking/errors/NoSpaceInLotException.java" />
-        <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java" />
         <option value="$PROJECT_DIR$/src/pigdeer/parking/errors/NoParkBoyException.java" />
-        <option value="$PROJECT_DIR$/src/pigdeer/parking/interfaces/Parking.java" />
         <option value="$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java" />
+        <option value="$PROJECT_DIR$/src/pigdeer/parking/interfaces/Parking.java" />
+        <option value="$PROJECT_DIR$/src/pigdeer/parking/interfaces/ParkingInterface.java" />
         <option value="$PROJECT_DIR$/src/pigdeer/parking/base/Parket.java" />
+        <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1448" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -151,6 +186,21 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -187,89 +237,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="errors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,11 +258,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="pigdeer.parking.interfaces" />
       <recent name="pigdeer.parking.errors" />
       <recent name="pigdeer.parking.base" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParkTest.should_park_more_space_if_face_the_smart_boy">
+  <component name="RunManager" selected="JUnit.ParkTest">
     <configuration default="false" name="ParkTest.should_not_push_a_car_if_has_no_space" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Parking" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -427,24 +397,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -470,6 +422,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -598,7 +568,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-4" y="-4" width="1448" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18116806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -614,8 +584,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20471162" sideWeight="0.61740166" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38259834" sideWeight="0.49712643" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20402299" sideWeight="0.6174033" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38259667" sideWeight="0.49712643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -715,42 +685,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/errors/NoSpaceForCarException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="60" selection-start="233" selection-end="249" vertical-scroll-proportion="0.19975339">
-          <folding />
-        </state>
+        <state line="9" column="60" selection-start="233" selection-end="249" vertical-scroll-proportion="0.19975339" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/errors/NoParkBoyException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="56" selection-start="243" selection-end="243" vertical-scroll-proportion="0.19975339">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/interfaces/Parking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="0.3107275">
-          <folding />
-        </state>
+        <state line="9" column="56" selection-start="243" selection-end="243" vertical-scroll-proportion="0.19975339" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="44" selection-start="1204" selection-end="1208" vertical-scroll-proportion="0.0">
+        <state line="44" column="44" selection-start="1198" selection-end="1202" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="27" selection-start="2157" selection-end="2157" vertical-scroll-proportion="0.0">
+        <state line="66" column="0" selection-start="3732" selection-end="3732" vertical-scroll-proportion="-11.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_02/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="889" selection-end="889" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/statements/ExpectException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="601" selection-end="601" vertical-scroll-proportion="0.63185376">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/Parket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="9" selection-start="1331" selection-end="1331" vertical-scroll-proportion="1.1555076">
+        <state line="15" column="47" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/interfaces/ParkingInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="24" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="27" selection-start="1879" selection-end="1879" vertical-scroll-proportion="1.0522566">
           <folding />
         </state>
       </provider>
