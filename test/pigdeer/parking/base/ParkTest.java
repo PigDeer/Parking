@@ -20,17 +20,19 @@ import static junit.framework.Assert.assertSame;
  */
 public class ParkTest {
     private Parket parket;
-    private ParkBoy parkBoySmart;
     private ParkBoy parkBoyNormal;
+    private ParkBoy parkBoySmart;
+    private ParkBoy parkBoySuper;
 
     @Before
     public void initPark(){
         ArrayList<ParkLot> pl = new ArrayList<ParkLot>();
-        pl.add(new ParkLot(2));
+        pl.add(new ParkLot(3));
         pl.add(new ParkLot(2));
         parket = new Parket(pl);
-        parkBoySmart = new ParkBoy(new GoodChooser(),parket);
         parkBoyNormal = new ParkBoy(new NormalChooser(),parket);
+        parkBoySmart = new ParkBoy(new SmartChooser(),parket);
+        parkBoySuper = new ParkBoy(new SuperChooser(),parket);
     }
 
     @Test
@@ -53,6 +55,7 @@ public class ParkTest {
         parkBoyNormal.push(new Car());
         parkBoyNormal.push(new Car());
         parkBoyNormal.push(new Car());
+        parkBoyNormal.push(new Car());
     }
 
     @Test (expected = NoCarForTicketException.class)
@@ -65,6 +68,9 @@ public class ParkTest {
     public void should_park_random_if_face_the_normal_boy(){
         parkBoyNormal.push(new Car());
         parkBoyNormal.push(new Car());
+        assertEquals(1,parket.getParkingList().get(0).getAvailableSpace());
+        assertEquals(2,parket.getParkingList().get(1).getAvailableSpace());
+        parkBoyNormal.push(new Car());
         assertEquals(0,parket.getParkingList().get(0).getAvailableSpace());
         assertEquals(2,parket.getParkingList().get(1).getAvailableSpace());
     }
@@ -73,6 +79,20 @@ public class ParkTest {
     public void should_park_more_space_if_face_the_smart_boy(){
         parkBoySmart.push(new Car());
         parkBoySmart.push(new Car());
+        assertEquals(1,parket.getParkingList().get(0).getAvailableSpace());
+        assertEquals(2,parket.getParkingList().get(1).getAvailableSpace());
+        parkBoySmart.push(new Car());
+        assertEquals(1,parket.getParkingList().get(0).getAvailableSpace());
+        assertEquals(1,parket.getParkingList().get(1).getAvailableSpace());
+    }
+
+    @Test
+    public void should_park_highest_free_rate_if_face_the_super_boy(){
+        parkBoySuper.push(new Car());
+        parkBoySuper.push(new Car());
+        assertEquals(2,parket.getParkingList().get(0).getAvailableSpace());
+        assertEquals(1,parket.getParkingList().get(1).getAvailableSpace());
+        parkBoySuper.push(new Car());
         assertEquals(1,parket.getParkingList().get(0).getAvailableSpace());
         assertEquals(1,parket.getParkingList().get(1).getAvailableSpace());
     }
