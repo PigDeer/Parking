@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/base/GoodChooser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/base/NormalChooser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Parking/pigdeer/parking/interfaces/ParkLotChooser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pigdeer/parking/base/GoodChooser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pigdeer/parking/base/NormalChooser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pigdeer/parking/interfaces/ParkLotChooser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java" afterPath="$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java" />
     </list>
     <ignored path="Parking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,7 +83,7 @@
       <file leaf-file-name="ParkTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="28" selection-start="605" selection-end="605" vertical-scroll-proportion="0.31752872">
+            <state line="22" column="28" selection-start="605" selection-end="605" vertical-scroll-proportion="0.09770115">
               <folding />
             </state>
           </provider>
@@ -576,7 +569,11 @@
       <created>1354430750076</created>
       <updated>1354430750076</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add">
+      <created>1354434256185</created>
+      <updated>1354434256185</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -790,7 +787,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="605" selection-end="605" vertical-scroll-proportion="0.31752872">
+        <state line="22" column="28" selection-start="605" selection-end="605" vertical-scroll-proportion="0.09770115">
           <folding />
         </state>
       </provider>
