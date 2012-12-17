@@ -1,7 +1,6 @@
 package pigdeer.parking.interfaces;
 
 import pigdeer.parking.base.ParkLot;
-import pigdeer.parking.base.Parket;
 
 import java.util.List;
 

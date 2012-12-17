@@ -71,7 +71,7 @@ public class ParkBoyTest {
     }
 
     @Test
-    public void should_print_info_has_one_car(){
+    public void should_print_info_if_super_boy_has_three_car(){
         parkBoySuper.push(new Car());
         parkBoySuper.push(new Car());
         parkBoySuper.push(new Car());

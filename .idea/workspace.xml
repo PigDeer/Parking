@@ -7,12 +7,14 @@
     <file path="/Dummy.txt" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355731376747" ignored="false" />
     <file path="/ParkLot.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355732053036" ignored="false" />
     <file path="/PrintHelper.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355733110914" ignored="false" />
-    <file path="/ParkBoy.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355735577147" ignored="false" />
+    <file path="/ParkBoy.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355740662868" ignored="false" />
     <file path="/fragment.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355731372124" ignored="false" />
-    <file path="/ParkManager.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355733091811" ignored="false" />
+    <file path="/ParkManager.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355739278080" ignored="false" />
     <file path="/ParkingInterface.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355730881548" ignored="false" />
     <file path="/ParkLotTest.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355733649978" ignored="false" />
-    <file path="/ParkBoyTest.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355734961001" ignored="false" />
+    <file path="/ParkBoyTest.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355739666488" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355741065127" ignored="false" />
+    <file path="/ParkManagerTest.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355739520992" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/src/pigdeer/parking/interfaces/ParkLotChooser.java" />
         <option value="$PROJECT_DIR$/src/pigdeer/parking/errors/NoCarInBoyException.java" />
         <option value="$PROJECT_DIR$/src/pigdeer/parking/errors/NoSpaceInBoyException.java" />
@@ -104,9 +105,10 @@
         <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParketTest.java" />
         <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java" />
         <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParkLotTest.java" />
-        <option value="$PROJECT_DIR$/src/pigdeer/parking/base/ParkManager.java" />
-        <option value="$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java" />
         <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParkBoyTest.java" />
+        <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParkManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java" />
+        <option value="$PROJECT_DIR$/src/pigdeer/parking/base/ParkManager.java" />
       </list>
     </option>
   </component>
@@ -220,7 +222,7 @@
       <recent name="pigdeer.parking.base" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParkLotTest">
+  <component name="RunManager" selected="JUnit.pigdeer.parking.base in Parking">
     <configuration default="false" name="ParkLotTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Parking" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -265,28 +267,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="ParkBoyTest.should_park_highest_free_rate_if_face_the_super_boy" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Parking" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pigdeer.parking.base" />
-      <option name="MAIN_CLASS_NAME" value="pigdeer.parking.base.ParkBoyTest" />
-      <option name="METHOD_NAME" value="should_park_highest_free_rate_if_face_the_super_boy" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="ParkBoyTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Parking" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -309,14 +289,36 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="ParkBoyTest.should_park_random_if_face_the_normal_boy" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="ParkManagerTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Parking" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="pigdeer.parking.base" />
-      <option name="MAIN_CLASS_NAME" value="pigdeer.parking.base.ParkBoyTest" />
-      <option name="METHOD_NAME" value="should_park_random_if_face_the_normal_boy" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="pigdeer.parking.base.ParkManagerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="pigdeer.parking.base in Parking" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Parking" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pigdeer.parking.base" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -422,17 +424,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ParkLotTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.ParkBoyTest.should_print_info_has_one_car" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkBoyTest.should_park_highest_free_rate_if_face_the_super_boy" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkBoyTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ParkBoyTest.should_park_random_if_face_the_normal_boy" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkBoyTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkManagerTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.pigdeer.parking.base in Parking" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ParkLotTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ParkBoyTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ParkBoyTest.should_print_info_has_one_car" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ParkBoyTest.should_park_random_if_face_the_normal_boy" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ParkBoyTest.should_park_highest_free_rate_if_face_the_super_boy" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.pigdeer.parking.base in Parking" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ParkManagerTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ParkBoyTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ParkLotTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ParkBoyTest.should_print_info_has_one_car" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -521,7 +523,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18030842" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -538,7 +540,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22285251" sideWeight="0.5112693" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23581848" sideWeight="0.5112693" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48873073" sideWeight="0.49712643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -608,22 +610,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/SmartChooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.044063646">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/errors/NoSpaceInBoyException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="200" selection-end="221" vertical-scroll-proportion="0.19828641">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/errors/NoCarInBoyException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="32" selection-start="200" selection-end="219" vertical-scroll-proportion="0.19828641">
@@ -638,23 +624,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/Parket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="261" selection-end="300" vertical-scroll-proportion="0.2643819">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/ParkLot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="18" selection-start="1870" selection-end="1870" vertical-scroll-proportion="0.66952264">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/utils/PrintHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.8237454">
           <folding />
         </state>
       </provider>
@@ -666,49 +638,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="786" selection-end="786" vertical-scroll-proportion="-0.19706242">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="785" selection-end="785" vertical-scroll-proportion="0.4626683">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.6.0_16/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="878" selection-end="878" vertical-scroll-proportion="0.92727274">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkLotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="5" selection-start="1408" selection-end="1644" vertical-scroll-proportion="1.9620991">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkBoyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="28" selection-start="3168" selection-end="3168" vertical-scroll-proportion="1.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#550#559#0" expanded="true" />
-            <element signature="e#822#831#0" expanded="true" />
-            <element signature="e#1089#1098#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="21" selection-start="1438" selection-end="1442" vertical-scroll-proportion="0.35555556">
           <folding />
         </state>
       </provider>
@@ -722,11 +654,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/errors/NoSpaceForCarException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="35" selection-start="202" selection-end="224" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/ParkManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="784" selection-end="784" vertical-scroll-proportion="1.0666667">
+        <state line="71" column="0" selection-start="1995" selection-end="1995" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/utils/PrintHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="50" selection-start="236" selection-end="290" vertical-scroll-proportion="-0.083333336">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="53" selection-start="1875" selection-end="1924" vertical-scroll-proportion="0.67654324">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/errors/NoCarForTicketException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="36" selection-start="202" selection-end="225" vertical-scroll-proportion="0.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkLotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="26" selection-start="1518" selection-end="1518" vertical-scroll-proportion="1.4765432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkBoyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="5" selection-start="2845" selection-end="2845" vertical-scroll-proportion="0.9432099">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#550#559#0" expanded="true" />
+            <element signature="e#822#831#0" expanded="true" />
+            <element signature="e#1089#1098#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="29" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.9876543">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#693#702#0" expanded="true" />
+            <element signature="e#767#776#0" expanded="true" />
+            <element signature="e#1037#1046#0" expanded="true" />
+            <element signature="e#1303#1312#0" expanded="true" />
+            <element signature="e#1568#1577#0" expanded="true" />
           </folding>
         </state>
       </provider>

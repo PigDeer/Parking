@@ -67,16 +67,16 @@ public class ParkBoy implements ParkingInterface {
         return printInfoWithTabs(0);
     }
 
-    public String printInfoWithTabs(int tabs){
+    public String printInfoWithTabsNoTotal(int tabs){
         String message = "";
-        int space = 0;
-        int empty = 0;
         for(ParkLot pl : this.getParkLots()){
             message += pl.printInfoWithTabs(tabs);
-            space += pl.getTotalSpace();
-            empty += pl.getAvailableSpace();
         }
-        message += PrintHelper.getStatLabel(space,empty,tabs);
+        return message;
+    }
+    public String printInfoWithTabs(int tabs){
+        String message = printInfoWithTabsNoTotal(tabs);
+        message += PrintHelper.getStatLabel(this.getSpace(),this.getEmpty(),tabs);
         return message;
     }
 
