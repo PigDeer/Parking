@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Parking.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355747683715" ignored="false" />
+    <file path="/Dummy.txt" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355751567937" ignored="false" />
     <file path="/ParkLot.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355732053036" ignored="false" />
     <file path="/PrintHelper.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355733110914" ignored="false" />
     <file path="/ParkBoy.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355740662868" ignored="false" />
@@ -510,7 +509,11 @@
       <created>1354436254982</created>
       <updated>1354436254982</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
+      <created>1355751582999</created>
+      <updated>1355751582999</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
