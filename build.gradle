@@ -6,7 +6,7 @@ version = '1.0'
 
 jar {
 	manifest {
-		attributes 'Implementation-Title': 'Parking App', 'Implementation-Version': version , 'Copy Right': 'PigDeer.com'
+		attributes 'Implementation-Title': 'Parking App', 'Implementation-Version': version
 	}
 }
 
