@@ -1,7 +1,9 @@
 package pigdeer.parking.base;
 
-import pigdeer.parking.errors.NoSpaceForCarException;
+import pigdeer.parking.errors.NoSpaceInBoyException;
 import pigdeer.parking.interfaces.ParkLotChooser;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,16 +14,16 @@ import pigdeer.parking.interfaces.ParkLotChooser;
  */
 public class SmartChooser implements ParkLotChooser {
     @Override
-    public ParkLot choose(Parket parket) throws NoSpaceForCarException{
+    public ParkLot choose(List<ParkLot> parkLots) throws NoSpaceInBoyException {
         int space = 0;
         ParkLot parkLot = null;
-        for(ParkLot p : parket.getParkingList()){
+        for(ParkLot p : parkLots){
             if(p.getAvailableSpace()>space){
                 space = p.getAvailableSpace();
                 parkLot = p;
             }
         }
         if(space>0) return parkLot;
-        throw new NoSpaceForCarException();
+        throw new NoSpaceInBoyException();
     }
 }

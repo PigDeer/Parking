@@ -3,6 +3,8 @@ package pigdeer.parking.interfaces;
 import pigdeer.parking.base.Car;
 import pigdeer.parking.base.Ticket;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Zhutao
@@ -15,4 +17,6 @@ public interface ParkingInterface {
     public Ticket push(Car car);
 
     public Car pull(Ticket ticket);
+
+    public String printInfo();
 }

@@ -18,7 +18,7 @@ import static junit.framework.Assert.assertSame;
  * Time: 下午3:05
  * To change this template use File | Settings | File Templates.
  */
-public class ParkTest {
+public class ParkManagerTest {
     private Parket parket;
     private ParkBoy parkBoyNormal;
     private ParkBoy parkBoySmart;
