@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" name="Default" comment="" />
+    <list default="true" id="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/base/Car.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/base/Car.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/errors/NoCarInBoyException.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/errors/NoCarInBoyException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/errors/NoSpaceInBoyException.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/errors/NoSpaceInBoyException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/base/NormalChooser.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/base/NormalChooser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pigdeer/parking/base/ParkBoyTest.java" afterPath="$PROJECT_DIR$/test/pigdeer/parking/base/ParkBoyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/base/ParkLot.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/base/ParkLot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/interfaces/ParkLotChooser.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/interfaces/ParkLotChooser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pigdeer/parking/base/ParkLotTest.java" afterPath="$PROJECT_DIR$/test/pigdeer/parking/base/ParkLotTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/base/ParkManager.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/base/ParkManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pigdeer/parking/base/ParkManagerTest.java" afterPath="$PROJECT_DIR$/test/pigdeer/parking/base/ParkManagerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/interfaces/ParkingInterface.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/interfaces/ParkingInterface.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/utils/PrintHelper.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/utils/PrintHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/base/SmartChooser.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/base/SmartChooser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pigdeer/parking/base/SuperChooser.java" afterPath="$PROJECT_DIR$/src/pigdeer/parking/base/SuperChooser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Parking.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355731376747" ignored="false" />
+    <file path="/Dummy.txt" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355747683715" ignored="false" />
     <file path="/ParkLot.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355732053036" ignored="false" />
     <file path="/PrintHelper.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355733110914" ignored="false" />
     <file path="/ParkBoy.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355740662868" ignored="false" />
-    <file path="/fragment.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355731372124" ignored="false" />
+    <file path="/fragment.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355747683715" ignored="false" />
     <file path="/ParkManager.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355739278080" ignored="false" />
     <file path="/ParkingInterface.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355730881548" ignored="false" />
     <file path="/ParkLotTest.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355733649978" ignored="false" />
     <file path="/ParkBoyTest.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355739666488" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355741065127" ignored="false" />
     <file path="/ParkManagerTest.java" changelist="c9db0eb6-d9c2-4aa2-9a0b-7f86e987bf59" time="1355739520992" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,18 +122,18 @@
         <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParketTest.java" />
         <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParkTest.java" />
         <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParkLotTest.java" />
-        <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParkBoyTest.java" />
         <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParkManagerTest.java" />
         <option value="$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java" />
         <option value="$PROJECT_DIR$/src/pigdeer/parking/base/ParkManager.java" />
+        <option value="$PROJECT_DIR$/test/pigdeer/parking/base/ParkBoyTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="x" value="404" />
+    <option name="y" value="144" />
+    <option name="width" value="768" />
+    <option name="height" value="656" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -198,18 +215,26 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="parking" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -459,6 +484,7 @@
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
     <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">C:\Users\Zhutao\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
@@ -523,7 +549,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
+    <frame x="404" y="144" width="768" height="656" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18030842" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -532,7 +558,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32657927" sideWeight="0.49784482" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262159" sideWeight="0.49784482" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740214" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740214" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -540,7 +566,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23581848" sideWeight="0.5112693" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34702548" sideWeight="0.5112693" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48873073" sideWeight="0.49712643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -605,29 +631,73 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Parking" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Parking" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/errors/NoCarInBoyException.java">
+    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/interfaces/ParkLotChooser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="200" selection-end="219" vertical-scroll-proportion="0.19828641">
+        <state line="15" column="1" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/interfaces/ParkLotChooser.java">
+    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="50" selection-start="374" selection-end="374" vertical-scroll-proportion="0.2643819">
+        <state line="9" column="13" selection-start="199" selection-end="199" vertical-scroll-proportion="0.20351759">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/Ticket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="200" selection-end="200" vertical-scroll-proportion="0.20351759">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/NormalChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="78" selection-start="440" selection-end="461" vertical-scroll-proportion="0.36180905">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="53" selection-start="1875" selection-end="1924" vertical-scroll-proportion="1.3880049">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/ParkLot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="18" selection-start="1870" selection-end="1870" vertical-scroll-proportion="0.66952264">
+        <state line="75" column="18" selection-start="1870" selection-end="1870" vertical-scroll-proportion="1.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/ParkManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="0" selection-start="1995" selection-end="1995" vertical-scroll-proportion="1.4320686">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -638,69 +708,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.6.0_16/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="878" selection-end="878" vertical-scroll-proportion="0.92727274">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/NormalChooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="78" selection-start="440" selection-end="461" vertical-scroll-proportion="0.37037036">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/errors/NoSpaceForCarException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="202" selection-end="224" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/ParkManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="1995" selection-end="1995" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/utils/PrintHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="50" selection-start="236" selection-end="290" vertical-scroll-proportion="-0.083333336">
+        <state line="15" column="0" selection-start="398" selection-end="398" vertical-scroll-proportion="0.250918">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/base/ParkBoy.java">
+    <entry file="file://$PROJECT_DIR$/.idea/gradle.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="53" selection-start="1875" selection-end="1924" vertical-scroll-proportion="0.67654324">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pigdeer/parking/errors/NoCarForTicketException.java">
+    <entry file="file://$PROJECT_DIR$/.idea/.name">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="202" selection-end="225" vertical-scroll-proportion="0.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkLotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="26" selection-start="1518" selection-end="1518" vertical-scroll-proportion="1.4765432">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkBoyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="5" selection-start="2845" selection-end="2845" vertical-scroll-proportion="0.9432099">
+        <state line="73" column="56" selection-start="2913" selection-end="2913" vertical-scroll-proportion="1.2617284">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#550#559#0" expanded="true" />
@@ -710,17 +741,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/pigdeer/parking/base/ParkManagerTest.java">
+    <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="29" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.9876543">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#693#702#0" expanded="true" />
-            <element signature="e#767#776#0" expanded="true" />
-            <element signature="e#1037#1046#0" expanded="true" />
-            <element signature="e#1303#1312#0" expanded="true" />
-            <element signature="e#1568#1577#0" expanded="true" />
-          </folding>
+        <state line="1" column="23" selection-start="59" selection-end="59" vertical-scroll-proportion="0.044444446">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/Zhutao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/software.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -730,6 +775,17 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
