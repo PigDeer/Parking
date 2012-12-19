@@ -3,7 +3,7 @@ package pigdeer.parking.base;
 import org.junit.Before;
 import org.junit.Test;
 import pigdeer.parking.errors.NoCarForTicketException;
-import pigdeer.parking.errors.NoSpaceForCarException;
+import pigdeer.parking.errors.NoSpaceInBoyException;
 
 import java.util.ArrayList;
 
@@ -20,6 +20,9 @@ import static junit.framework.Assert.assertSame;
  */
 public class ParkManagerTest {
     private ParkManager parkManager;
+    private ParkBoy parkBoyNormal;
+    private ParkBoy parkBoySmart;
+    private ParkBoy parkBoySuper;
 
     @Before
     public void initParkManager(){
@@ -28,19 +31,19 @@ public class ParkManagerTest {
         ArrayList<ParkLot> parkBoyNormalLots = new ArrayList<ParkLot>();
         parkBoyNormalLots.add(new ParkLot(3,"PL.011"));
         parkBoyNormalLots.add(new ParkLot(2,"PL.012"));
-		ParkBoy parkBoyNormal = new ParkBoy(new NormalChooser(), parkBoyNormalLots, "PB.001");
+		parkBoyNormal = new ParkBoy(new NormalChooser(), parkBoyNormalLots, "PB.001");
 		parkBoys.add(parkBoyNormal);
 
         ArrayList<ParkLot> parkBoySmartLots = new ArrayList<ParkLot>();
         parkBoySmartLots.add(new ParkLot(3,"PL.021"));
         parkBoySmartLots.add(new ParkLot(2,"PL.022"));
-		ParkBoy parkBoySmart = new ParkBoy(new SmartChooser(), parkBoySmartLots, "PB.002");
+		parkBoySmart = new ParkBoy(new SmartChooser(), parkBoySmartLots, "PB.002");
 		parkBoys.add(parkBoySmart);
 
         ArrayList<ParkLot> parkBoySuperLots = new ArrayList<ParkLot>();
         parkBoySuperLots.add(new ParkLot(3,"PL.031"));
         parkBoySuperLots.add(new ParkLot(2,"PL.032"));
-		ParkBoy parkBoySuper = new ParkBoy(new SuperChooser(), parkBoySuperLots, "PB.003");
+		parkBoySuper = new ParkBoy(new SuperChooser(), parkBoySuperLots, "PB.003");
         parkBoys.add(parkBoySuper);
 
         ArrayList<ParkLot> parkManagerLots = new ArrayList<ParkLot>();
@@ -72,8 +75,8 @@ public class ParkManagerTest {
         assertEquals(1,parkBoySmart.getParkLots().get(0).getAvailableSpace());
         assertEquals(2,parkBoySmart.getParkLots().get(1).getAvailableSpace());
         Ticket ticket3 = parkManager.command(parkBoySmart, new Car());
-        assertEquals(0,parkBoySmart.getParkLots().get(0).getAvailableSpace());
-        assertEquals(2,parkBoySmart.getParkLots().get(1).getAvailableSpace());
+        assertEquals(1,parkBoySmart.getParkLots().get(0).getAvailableSpace());
+        assertEquals(1,parkBoySmart.getParkLots().get(1).getAvailableSpace());
 		assertNotNull(ticket1);
 		assertNotNull(ticket2);
 		assertNotNull(ticket3);
@@ -83,11 +86,11 @@ public class ParkManagerTest {
 	public void should_park_highest_free_rate_if_command_super_boy_push_car() {
         Ticket ticket1 = parkManager.command(parkBoySuper, new Car());
 		Ticket ticket2 = parkManager.command(parkBoySuper, new Car());
-        assertEquals(1,parkBoySuper.getParkLots().get(0).getAvailableSpace());
-        assertEquals(2,parkBoySuper.getParkLots().get(1).getAvailableSpace());
+        assertEquals(2,parkBoySuper.getParkLots().get(0).getAvailableSpace());
+        assertEquals(1,parkBoySuper.getParkLots().get(1).getAvailableSpace());
         Ticket ticket3 = parkManager.command(parkBoySuper, new Car());
-        assertEquals(0,parkBoySuper.getParkLots().get(0).getAvailableSpace());
-        assertEquals(2,parkBoySuper.getParkLots().get(1).getAvailableSpace());
+        assertEquals(1,parkBoySuper.getParkLots().get(0).getAvailableSpace());
+        assertEquals(1,parkBoySuper.getParkLots().get(1).getAvailableSpace());
 		assertNotNull(ticket1);
 		assertNotNull(ticket2);
 		assertNotNull(ticket3);
@@ -135,19 +138,19 @@ public class ParkManagerTest {
         String message =
                 "停车场编号：PL.001\n" +
                 "\t车位数：3\n" +
-                "\t空位数：3\n" +
+                "\t空位数：2\n" +
                 "停车场编号：PL.002\n" +
                 "\t车位数：2\n" +
                 "\t空位数：2\n" +
                 "停车仔编号：PB.001\n" +
                     "\t停车场编号：PL.011\n" +
                     "\t\t车位数：3\n" +
-                    "\t\t空位数：2\n" +
+                    "\t\t空位数：3\n" +
                     "\t停车场编号：PL.012\n" +
                     "\t\t车位数：2\n" +
                     "\t\t空位数：2\n" +
                     "\tTotal车位数：5\n" +
-                    "\tTotal空位数：4\n" +
+                    "\tTotal空位数：5\n" +
                 "停车仔编号：PB.002\n" +
                     "\t停车场编号：PL.021\n" +
                     "\t\t车位数：3\n" +

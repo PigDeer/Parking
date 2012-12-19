@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="Zhutao-PC" name="pigdeer.parking.base.ParkBoyTest" tests="4" time="0.057" timestamp="2012-12-19T14:26:11">
+  <properties />
+  <testcase classname="pigdeer.parking.base.ParkBoyTest" name="should_park_random_if_face_the_normal_boy" time="0.0050" />
+  <testcase classname="pigdeer.parking.base.ParkBoyTest" name="should_park_more_space_if_face_the_smart_boy" time="0.0" />
+  <testcase classname="pigdeer.parking.base.ParkBoyTest" name="should_print_info_if_super_boy_has_three_car" time="0.0010" />
+  <testcase classname="pigdeer.parking.base.ParkBoyTest" name="should_park_highest_free_rate_if_face_the_super_boy" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

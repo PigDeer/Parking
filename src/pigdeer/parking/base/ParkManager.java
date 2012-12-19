@@ -2,7 +2,6 @@ package pigdeer.parking.base;
 
 import pigdeer.parking.errors.NoCarForTicketException;
 import pigdeer.parking.errors.NoCarInBoyException;
-import pigdeer.parking.errors.NoSpaceForCarException;
 import pigdeer.parking.errors.NoSpaceInBoyException;
 import pigdeer.parking.interfaces.ParkLotChooser;
 import pigdeer.parking.utils.PrintHelper;

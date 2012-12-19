@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="Zhutao-PC" name="pigdeer.parking.base.ParkManagerTest" tests="8" time="0.0060" timestamp="2012-12-19T14:26:11">
+  <properties />
+  <testcase classname="pigdeer.parking.base.ParkManagerTest" name="should_park_more_space_if_command_smart_boy_push_car" time="0.0" />
+  <testcase classname="pigdeer.parking.base.ParkManagerTest" name="should_pull_a_car_if_had_park_it" time="0.0" />
+  <testcase classname="pigdeer.parking.base.ParkManagerTest" name="should_park_highest_free_rate_if_command_super_boy_push_car" time="0.0" />
+  <testcase classname="pigdeer.parking.base.ParkManagerTest" name="should_not_pull_a_car_if_has_no_car" time="0.0" />
+  <testcase classname="pigdeer.parking.base.ParkManagerTest" name="should_print_info_has_one_car" time="0.0" />
+  <testcase classname="pigdeer.parking.base.ParkManagerTest" name="should_not_push_a_car_if_has_no_space" time="0.0" />
+  <testcase classname="pigdeer.parking.base.ParkManagerTest" name="should_push_a_car_by_himself_if_has_space" time="0.0" />
+  <testcase classname="pigdeer.parking.base.ParkManagerTest" name="should_park_random_if_command_normal_boy_push_car" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

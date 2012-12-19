@@ -2,11 +2,11 @@ apply plugin: 'java'
 
 sourceCompatibility = 1.6
 
-version = '1.0'
+archiveBaseName = 'parkingLotsModel'
 
 jar {
 	manifest {
-		attributes 'Implementation-Title': 'Parking App', 'Implementation-Version': version
+		attributes 'Implementation-Title': 'Parking App', 'Implementation-Version': 1.0
 	}
 }
 
