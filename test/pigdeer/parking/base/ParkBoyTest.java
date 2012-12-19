@@ -39,35 +39,44 @@ public class ParkBoyTest {
 
     @Test
     public void should_park_random_if_face_the_normal_boy(){
-        parkBoyNormal.push(new Car());
-        parkBoyNormal.push(new Car());
+        Ticket ticket1 = parkBoyNormal.push(new Car());
+        Ticket ticket2 = parkBoyNormal.push(new Car());
         assertEquals(1,parkBoyNormal.getParkLots().get(0).getAvailableSpace());
         assertEquals(2,parkBoyNormal.getParkLots().get(1).getAvailableSpace());
-        parkBoyNormal.push(new Car());
+        Ticket ticket3 = parkBoyNormal.push(new Car());
         assertEquals(0,parkBoyNormal.getParkLots().get(0).getAvailableSpace());
         assertEquals(2,parkBoyNormal.getParkLots().get(1).getAvailableSpace());
+		assertNotNull(ticket1);
+		assertNotNull(ticket2);
+		assertNotNull(ticket3);
     }
 
     @Test
     public void should_park_more_space_if_face_the_smart_boy(){
-        parkBoySmart.push(new Car());
-        parkBoySmart.push(new Car());
+        Ticket ticket1 = parkBoySmart.push(new Car());
+        Ticket ticket2 = parkBoySmart.push(new Car());
         assertEquals(1,parkBoySmart.getParkLots().get(0).getAvailableSpace());
         assertEquals(2,parkBoySmart.getParkLots().get(1).getAvailableSpace());
-        parkBoySmart.push(new Car());
+        Ticket ticket3 = parkBoySmart.push(new Car());
         assertEquals(1,parkBoySmart.getParkLots().get(0).getAvailableSpace());
         assertEquals(1,parkBoySmart.getParkLots().get(1).getAvailableSpace());
+		assertNotNull(ticket1);
+		assertNotNull(ticket2);
+		assertNotNull(ticket3);
     }
 
     @Test
     public void should_park_highest_free_rate_if_face_the_super_boy(){
-        parkBoySuper.push(new Car());
-        parkBoySuper.push(new Car());
+        Ticket ticket1 = parkBoySuper.push(new Car());
+        Ticket ticket2 = parkBoySuper.push(new Car());
         assertEquals(2,parkBoySuper.getParkLots().get(0).getAvailableSpace());
         assertEquals(1,parkBoySuper.getParkLots().get(1).getAvailableSpace());
-        parkBoySuper.push(new Car());
+        Ticket ticket3 = parkBoySuper.push(new Car());
         assertEquals(1,parkBoySuper.getParkLots().get(0).getAvailableSpace());
         assertEquals(1,parkBoySuper.getParkLots().get(1).getAvailableSpace());
+		assertNotNull(ticket1);
+		assertNotNull(ticket2);
+		assertNotNull(ticket3);
     }
 
     @Test

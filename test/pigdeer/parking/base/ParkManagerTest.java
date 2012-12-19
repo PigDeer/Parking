@@ -24,34 +24,87 @@ public class ParkManagerTest {
     @Before
     public void initParkManager(){
         ArrayList<ParkBoy> parkBoys = new ArrayList<ParkBoy>();
-
+		
         ArrayList<ParkLot> parkBoyNormalLots = new ArrayList<ParkLot>();
         parkBoyNormalLots.add(new ParkLot(3,"PL.011"));
         parkBoyNormalLots.add(new ParkLot(2,"PL.012"));
-        parkBoys.add(new ParkBoy(new NormalChooser(), parkBoyNormalLots, "PB.001"));
+		ParkBoy parkBoyNormal = new ParkBoy(new NormalChooser(), parkBoyNormalLots, "PB.001");
+		parkBoys.add(parkBoyNormal);
 
         ArrayList<ParkLot> parkBoySmartLots = new ArrayList<ParkLot>();
         parkBoySmartLots.add(new ParkLot(3,"PL.021"));
         parkBoySmartLots.add(new ParkLot(2,"PL.022"));
-        parkBoys.add(new ParkBoy(new SmartChooser(), parkBoySmartLots, "PB.002"));
+		ParkBoy parkBoySmart = new ParkBoy(new SmartChooser(), parkBoySmartLots, "PB.002");
+		parkBoys.add(parkBoySmart);
 
         ArrayList<ParkLot> parkBoySuperLots = new ArrayList<ParkLot>();
         parkBoySuperLots.add(new ParkLot(3,"PL.031"));
         parkBoySuperLots.add(new ParkLot(2,"PL.032"));
-        parkBoys.add(new ParkBoy(new SuperChooser(), parkBoySuperLots, "PB.003"));
+		ParkBoy parkBoySuper = new ParkBoy(new SuperChooser(), parkBoySuperLots, "PB.003");
+        parkBoys.add(parkBoySuper);
 
         ArrayList<ParkLot> parkManagerLots = new ArrayList<ParkLot>();
         parkManagerLots.add(new ParkLot(3,"PL.001"));
         parkManagerLots.add(new ParkLot(2,"PL.002"));
 
-        parkManager = new ParkManager(new SuperChooser(),parkManagerLots,"PM.001",parkBoys);
+        parkManager = new ParkManager(new NormalChooser(),parkManagerLots,"PM.001",parkBoys);
 
     }
 
+	@Test
+	public void should_park_random_if_command_normal_boy_push_car() {
+        Ticket ticket1 = parkManager.command(parkBoyNormal, new Car());
+		Ticket ticket2 = parkManager.command(parkBoyNormal, new Car());
+        assertEquals(1,parkBoyNormal.getParkLots().get(0).getAvailableSpace());
+        assertEquals(2,parkBoyNormal.getParkLots().get(1).getAvailableSpace());
+        Ticket ticket3 = parkManager.command(parkBoyNormal, new Car());
+        assertEquals(0,parkBoyNormal.getParkLots().get(0).getAvailableSpace());
+        assertEquals(2,parkBoyNormal.getParkLots().get(1).getAvailableSpace());
+		assertNotNull(ticket1);
+		assertNotNull(ticket2);
+		assertNotNull(ticket3);
+    }
+
+	@Test
+	public void should_park_more_space_if_command_smart_boy_push_car() {
+        Ticket ticket1 = parkManager.command(parkBoySmart, new Car());
+		Ticket ticket2 = parkManager.command(parkBoySmart, new Car());
+        assertEquals(1,parkBoySmart.getParkLots().get(0).getAvailableSpace());
+        assertEquals(2,parkBoySmart.getParkLots().get(1).getAvailableSpace());
+        Ticket ticket3 = parkManager.command(parkBoySmart, new Car());
+        assertEquals(0,parkBoySmart.getParkLots().get(0).getAvailableSpace());
+        assertEquals(2,parkBoySmart.getParkLots().get(1).getAvailableSpace());
+		assertNotNull(ticket1);
+		assertNotNull(ticket2);
+		assertNotNull(ticket3);
+    }
+
+	@Test
+	public void should_park_highest_free_rate_if_command_super_boy_push_car() {
+        Ticket ticket1 = parkManager.command(parkBoySuper, new Car());
+		Ticket ticket2 = parkManager.command(parkBoySuper, new Car());
+        assertEquals(1,parkBoySuper.getParkLots().get(0).getAvailableSpace());
+        assertEquals(2,parkBoySuper.getParkLots().get(1).getAvailableSpace());
+        Ticket ticket3 = parkManager.command(parkBoySuper, new Car());
+        assertEquals(0,parkBoySuper.getParkLots().get(0).getAvailableSpace());
+        assertEquals(2,parkBoySuper.getParkLots().get(1).getAvailableSpace());
+		assertNotNull(ticket1);
+		assertNotNull(ticket2);
+		assertNotNull(ticket3);
+    }
+
     @Test
-    public void should_push_a_car_if_has_space() {
-        Ticket ticket = parkManager.push(new Car());
-        assertNotNull(ticket);
+    public void should_push_a_car_by_himself_if_has_space() {
+		Ticket ticket1 = parkManager.push(new Car());
+        Ticket ticket2 = parkManager.push(new Car());
+        assertEquals(1,parkManager.getParkLots().get(0).getAvailableSpace());
+        assertEquals(2,parkManager.getParkLots().get(1).getAvailableSpace());
+        Ticket ticket3 = parkManager.push(new Car());
+        assertEquals(0,parkManager.getParkLots().get(0).getAvailableSpace());
+        assertEquals(2,parkManager.getParkLots().get(1).getAvailableSpace());
+		assertNotNull(ticket1);
+		assertNotNull(ticket2);
+		assertNotNull(ticket3);
     }
 
     @Test
@@ -61,9 +114,9 @@ public class ParkManagerTest {
         assertSame(car, parkManager.pull(ticket));
     }
 
-    @Test (expected = NoSpaceForCarException.class)
+    @Test (expected = NoSpaceInBoyException.class)
     public void should_not_push_a_car_if_has_no_space(){
-        for(int i=0;i<20;i++){
+        for(int i=0;i<5;i++){
             parkManager.push(new Car());
         }
         parkManager.push(new Car());

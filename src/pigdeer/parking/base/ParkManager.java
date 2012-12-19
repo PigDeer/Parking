@@ -33,31 +33,26 @@ public class ParkManager extends ParkBoy{
         this.parkBoys = parkBoys;
     }
 
+	public Ticket command(ParkBoy parkBoy, Car car) throws NoSpaceInBoyException{
+		try{
+			return parkBoy.push(car);
+		}catch (NoSpaceInBoyException e){ }
+        throw new NoSpaceInBoyException();
+	}
+
     @Override
-    public Ticket push(Car car) throws NoSpaceForCarException{
+    public Ticket push(Car car) throws NoSpaceInBoyException{
         Ticket ticket = null;
-        for(ParkBoy pb : this.getParkBoys()){
-            try{
-                ticket = pb.push(car);
-                return ticket;
-            }catch (NoSpaceInBoyException e){ }
-        }
         try{
             ticket = super.push(car);
             return ticket;
         }catch (NoSpaceInBoyException e){ }
-        throw new NoSpaceForCarException();
+        throw new NoSpaceInBoyException();
     }
 
     @Override
     public Car pull(Ticket ticket) throws NoCarForTicketException{
         Car car = null;
-        for(ParkBoy pb : this.getParkBoys()){
-            try{
-                car = pb.pull(ticket);
-                return car;
-            }catch (NoCarInBoyException e){ }
-        }
         try{
             car = super.pull(ticket);
             return car;
