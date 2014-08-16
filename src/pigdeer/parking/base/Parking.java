@@ -12,7 +12,7 @@ import java.util.HashSet;
 public class Parking {
     private int totalSpace;
     private int currentSpace;
-    private HashSet cars;
+    private HashSet<Car> cars;
 
     public int getCurrentSpace() {
         return currentSpace;
@@ -30,11 +30,11 @@ public class Parking {
         this.totalSpace = totalSpace;
     }
 
-    public HashSet getCars() {
+    public HashSet<Car> getCars() {
         return cars;
     }
 
-    public void setCars(String[] cars) {
+    public void setCars(Car[] cars) {
         for(int i=0; i<cars.length; i++){
             this.cars.add(cars[i]);
         }
@@ -46,7 +46,7 @@ public class Parking {
         this.cars = new HashSet();
     }
 
-    public boolean push(String mycar) {
+    public boolean push(Car mycar) {
         if(getCurrentSpace()==0)
             return false;
         cars.add(mycar);
@@ -54,14 +54,24 @@ public class Parking {
         return true;
     }
 
-    public boolean pull(String mycar) {
-        if(getCurrentSpace()==getTotalSpace()) return false;
-        if(cars.contains(mycar)){
+    public boolean pull(Car mycar) {
+        Car c1 = new Car("car1",1);
+        Car c2 = new Car("car1",1);
+        System.out.println(c2.equals(c1));
+
+        System.out.println(cars.contains(c1));
+        System.out.println(cars);
+        System.out.println(mycar);
+        if(getCurrentSpace()==getTotalSpace()){
+            return false;
+        }else if(cars.contains(mycar)){
+
             cars.remove(mycar);
             this.currentSpace++;
             return true;
-        }
-        else
+        }else{
             return false;
+        }
     }
+
 }
